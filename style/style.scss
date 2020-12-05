@@ -29,7 +29,8 @@ html {
 
 body {
     background-color: $secondary;
-    a:hover{
+
+    a:hover {
         text-decoration: none;
         color: $tertiary;
     }
@@ -88,6 +89,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     .hero-content {
         color: $primary;
 
@@ -135,110 +137,94 @@ main {
             }
         }
 
-       
+
     }
 }
 
-.category-wrapper
-{
+.category-wrapper {
     margin-top: 3rem;
+    margin-bottom: 3rem;
     color: $primary;
-    .category-info
-    {
+
+    .category-info {
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin-top: 3rem;
+
         @media (min-width: 990px) {
             margin-top: 0;
         }
     }
-    .category-img
-    {
+
+    .category-img {
         display: flex;
         justify-content: center;
     }
-    h1 
-    {
+
+    h1 {
         font-size: $heading;
         font-weight: $bold;
         line-height: 71px;
     }
-    p 
-    {
+
+    p {
         font-size: $paragraph;
         font-weight: $regular;
         line-height: 42px;
     }
-    a 
-    {
+
+    a {
         font-size: $paragraph;
         font-weight: bold;
         color: $primary;
     }
-    a:hover
-    {
-        svg{
-            path{
+
+    a:hover {
+        svg {
+            path {
                 fill: $tertiary;
             }
         }
     }
-    
+
 }
-footer 
-{
-    min-height: 77px;
-    background-color:#e0e0e0;
-    display: grid;
-    place-items: center;
-    .footer-item
-    {
-        text-align: center;
-        ul 
-        {
-            width: 100px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-evenly;
-        }
-    }
-}
+
 
 .featured-wrapper {
     font-family: 'Raleway', sans-serif;
-    background: rgba(225, 225, 225, 0.54);
     border-radius: 12px;
     margin-top: 2rem;
-    height: 600px;
+    height: 620px;
     display: grid;
     place-items: center;
+    background: rgba(225, 225, 225, 0.3);
 
     h1 {
         margin: 0 auto;
-
-        font-size: 33px;
+        font-size: 2.0625rem;
         font-weight: 700;
         color: #0B315E;
         margin: 0;
+        font-weight: $black;
     }
-    #header
-    {
+
+    #header {
         text-align: center;
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
+
     @media (min-width: 870px) {
         h1 {
 
             margin-left: 20px;
-            
+
         }
-        #header
-        {
+
+        #header {
             text-align: left;
-            margin: 3rem 0 5rem 20px;
-            font-size: 2.0625rem;
-            font-weight: $black;
+
+
         }
     }
 
@@ -251,7 +237,6 @@ footer
 
     .swiper-container #header {
         font-size: 25px;
-        padding-top: 10px;
         margin-bottom: 20px;
     }
 
@@ -271,7 +256,7 @@ footer
         background-blend-mode: soft-light, normal;
         border: 1.50701px solid rgba(255, 255, 255, 0.4);
         box-sizing: border-box;
-        box-shadow: -12.0561px -12.0561px 24.1122px #FAFBFF, 12.0561px 12.0561px 24.1122px #A6ABBD;
+        box-shadow: 0px 13px 31px rgba(12, 20, 33, 0.04), 0px 9.45547px 20.8947px rgba(12, 20, 33, 0.032375), 0px 6.58125px 13.5141px rgba(12, 20, 33, 0.027), 0px 4.31641px 8.38574px rgba(12, 20, 33, 0.023125), 0px 2.6px 5.0375px rgba(12, 20, 33, 0.02), 0px 1.37109px 2.99707px rgba(12, 20, 33, 0.016875), 0px 0.56875px 1.79219px rgba(12, 20, 33, 0.013), inset 0px 2px 1px #FFFFFF;
         border-radius: 15px;
         display: flex;
         align-items: center;
@@ -280,16 +265,17 @@ footer
     }
 
     .article-items {
-        width: 290px;
+        width: 310px;
         height: 470px;
         margin: 0 auto;
+        padding: 0;
     }
 
     .img-box {
-        width: 290px;
-        height: 203px;
+        width: 310px;
+        height: 210px;
         margin: 0 auto;
-        margin-top: 22px;
+
     }
 
     .img-box img {
@@ -304,8 +290,8 @@ footer
         align-items: center;
 
     }
-    .list-unstyled
-    {
+
+    .list-unstyled {
         padding: 0;
         margin: 0;
     }
@@ -333,7 +319,8 @@ footer
         align-items: center;
         padding-left: 10px;
         margin: .5rem 0;
-        a:hover{
+
+        a:hover {
             text-decoration: underline;
             color: gray;
         }
@@ -374,11 +361,13 @@ footer
         // margin-left: 5px;
         bottom: 20px;
         left: 22px;
+
         a {
             color: #0B315E;
             font-weight: 700;
         }
-        a:hover{
+
+        a:hover {
             background-color: #0B315E;
             color: #F9F5EF;
         }
@@ -422,9 +411,27 @@ footer
         border-radius: 35px;
     }
 
-  
+
 
     .swiper-button-prev {
         color: #000;
+    }
+}
+
+footer {
+    min-height: 77px;
+    background-color: #e0e0e0;
+    display: grid;
+    place-items: center;
+
+    .footer-item {
+        text-align: center;
+
+        ul {
+            width: 100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-evenly;
+        }
     }
 }
