@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;900&display=swap");
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #F9F5EF;
+}
+body a:hover {
+  text-decoration: none;
+  color: gray;
+}
+
+nav .navbar-brand:hover svg rect {
+  stroke: gray;
+}
+nav .navbar-brand:hover svg path {
+  fill: gray;
+}
+nav .collapse {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+nav .collapse .navbar-nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-left: 0.5rem;
+}
+@media (min-width: 991px) {
+  nav .collapse .navbar-nav {
+    align-items: center;
+    background-color: transparent;
+  }
+}
+nav .collapse .navbar-nav .active-custom {
+  color: gray !important;
+}
+nav .collapse a {
+  color: #0B315E !important;
+}
+nav .collapse a:hover {
+  color: gray !important;
+}
+
+main {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .hero-content {
+  color: #0B315E;
+}
+main .hero-content h1 {
+  font-size: 3.25rem;
+  line-height: 71px;
+  font-weight: 900;
+}
+main .hero-content p {
+  font-size: 1.25rem;
+  line-height: 33px;
+  font-weight: 400;
+  padding: 1rem 0;
+}
+main .hero-content a {
+  color: #0B315E;
+  font-size: 1.25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+main .hero-content a:hover {
+  color: gray;
+  text-decoration: none;
+}
+main .hero-content ul li {
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+main .hero-content li:hover {
+  color: gray;
+}
+main .hero-content li:hover svg path {
+  fill: gray;
+}
+
+.category-wrapper {
+  margin-top: 3rem;
+  color: #0B315E;
+}
+.category-wrapper .category-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 3rem;
+}
+@media (min-width: 990px) {
+  .category-wrapper .category-info {
+    margin-top: 0;
+  }
+}
+.category-wrapper .category-img {
+  display: flex;
+  justify-content: center;
+}
+.category-wrapper h1 {
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 71px;
+}
+.category-wrapper p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 42px;
+}
+.category-wrapper a {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #0B315E;
+}
+.category-wrapper a:hover svg path {
+  fill: gray;
+}
+
+footer {
+  min-height: 77px;
+  background-color: #e0e0e0;
+  display: grid;
+  place-items: center;
+}
+footer .footer-item {
+  text-align: center;
+}
+footer .footer-item ul {
+  width: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
