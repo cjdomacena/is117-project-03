@@ -115,9 +115,9 @@ main .hero-content li:hover svg path {
   line-height: 71px;
 }
 .category-wrapper p {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 42px;
+  line-height: 40px;
 }
 .category-wrapper a {
   font-size: 1.25rem;
@@ -165,6 +165,7 @@ main .hero-content li:hover svg path {
 .featured-wrapper .swiper-container #header {
   font-size: 25px;
   margin-bottom: 20px;
+  font-weight: 600;
 }
 .featured-wrapper .swiper-slide {
   display: flex;
@@ -260,14 +261,14 @@ main .hero-content li:hover svg path {
   font-size: 16px;
 }
 .featured-wrapper .article-bottom {
-  width: 290px;
+  width: 300px;
   height: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: absolute;
   bottom: 20px;
-  left: 22px;
+  left: 10px;
 }
 .featured-wrapper .article-bottom a {
   color: #0B315E;

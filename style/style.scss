@@ -169,9 +169,9 @@ main {
     }
 
     p {
-        font-size: $paragraph;
+        font-size: $default-font;
         font-weight: $regular;
-        line-height: 42px;
+        line-height: 40px;
     }
 
     a {
@@ -238,6 +238,7 @@ main {
     .swiper-container #header {
         font-size: 25px;
         margin-bottom: 20px;
+        font-weight: $semi-bold;
     }
 
     .swiper-slide {
@@ -352,7 +353,7 @@ main {
 
     .article-bottom {
         // margin-top: 10px;
-        width: 290px;
+        width: 300px;
         height: auto;
         display: flex;
         align-items: center;
@@ -360,7 +361,7 @@ main {
         position: absolute;
         // margin-left: 5px;
         bottom: 20px;
-        left: 22px;
+        left: 10px;
 
         a {
             color: #0B315E;
