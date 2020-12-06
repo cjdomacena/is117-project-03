@@ -110,10 +110,6 @@ main .hero-content li:hover svg path {
   fill: gray;
 }
 
-.container {
-  max-width: 1440px !important;
-}
-
 .main-container {
   padding: 0;
 }
