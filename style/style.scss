@@ -37,7 +37,6 @@ body {
     }
 }
 
-
 .custom-bg {
     .bg-transparent {
         background-color: rgba(5, 5, 5, 0.4) !important;
@@ -492,11 +491,11 @@ footer {
 
 .article-body {
     background-color: #1A1C1E;
-
     .article-hero-bg {
         background-image: url(../../img/invention-hero.png);
         height: 450px;
         position: relative;
+  
     }
 
     .article-header {
