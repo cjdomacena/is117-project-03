@@ -455,6 +455,7 @@ footer .footer-item ul {
   line-height: 33px;
   font-weight: 300;
   color: #EBE8E2;
+  max-width: 50ch;
 }
 .article-body .article-content-body .article-img-one {
   max-width: 70ch;
