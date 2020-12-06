@@ -381,20 +381,14 @@ footer .footer-item ul {
 }
 .article-body .article-header {
   position: absolute;
-  bottom: 0;
+  bottom: 10%;
   left: 6.5%;
-  padding-bottom: 5rem;
   color: #F9F5EF;
   max-width: fit-content;
-  height: 200px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-}
-@media (max-width: 400px) {
-  .article-body .article-header {
-    bottom: 15%;
-  }
 }
 .article-body .article-header span:nth-child(1) {
   font-size: 1rem;
