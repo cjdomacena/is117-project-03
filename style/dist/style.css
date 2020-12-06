@@ -748,19 +748,21 @@ footer .footer-item ul {
 
 .template-article-section {
   background-color: #0B151E;
-  height: 250px;
+  height: auto;
   margin: 2rem 0;
+  padding: 0 15px;
 }
 
 .template-article-section-body {
   padding: 2rem 0;
-  max-width: 587px;
+  max-width: 557px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100%;
   font-family: "Raleway", sans-serif;
   color: #fffffe;
+  margin: 0 auto;
 }
 .template-article-section-body h1 {
   font-family: "Roboto Slab", serif;
