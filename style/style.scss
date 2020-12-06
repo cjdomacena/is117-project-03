@@ -105,14 +105,26 @@ nav {
 }
 
 main {
-    margin-top: 3rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 
+    .row 
+    {
+        width: 100%;
+       
+        margin: 0 auto;
+        @media (min-width: 800px) 
+        {
+            width: 90%;
+        }
+    }
+    
     .hero-content {
         color: $primary;
-
+        max-width: 634px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         h1 {
             font-size: $heading;
             line-height: 71px;
@@ -163,8 +175,8 @@ main {
 
 .container {
     max-width: 1440px !important;
-    width: 100vw;
 
+    
 }
 
 .main-container {
@@ -175,15 +187,28 @@ main {
     margin-top: 3rem;
     margin-bottom: 3rem;
     color: $primary;
-
+    .row 
+    {
+        width: 100%;
+       
+        margin: 0 auto;
+        @media (min-width: 800px) 
+        {
+            width: 90%;
+        }
+    }
     .category-info {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-top: 3rem;
-
+        padding-top: 3rem;
+        text-align: left;
+        max-width: 634px;
+        margin: 0 auto;
         @media (min-width: 990px) {
-            margin-top: 0;
+            align-items: flex-start;
+            padding-top: 0;
+            
         }
     }
 
@@ -196,18 +221,21 @@ main {
         font-size: $heading;
         font-weight: $bold;
         line-height: 71px;
+        max-width: 532px;
     }
 
     p {
-        font-size: $default-font;
+        font-size: $paragraph;
         font-weight: $regular;
         line-height: 40px;
+        
     }
 
     a {
         font-size: $paragraph;
         font-weight: bold;
         color: $primary;
+        width: 100%;
     }
 
     a:hover {
@@ -478,14 +506,15 @@ footer {
 
     .article-header {
         position: absolute;
-        bottom: 2%;
-        left: 10%;
+        bottom: 5%;
+        left: 6.5%;
+        padding-bottom: 5rem;
         color: $secondary;
-        max-width: 500px;
-        height: 300px;
+        max-width: fit-content;
+        height: 200px;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-around;
 
         span:nth-child(1) {
             font-size: 1rem;
@@ -503,7 +532,7 @@ footer {
     .author-info {
         margin-top: 1rem;
         display: flex;
-        width: 200px;
+        width: 210px;
         justify-content: space-between;
         align-items: center;
         font-weight: $medium;
@@ -513,7 +542,12 @@ footer {
             height: 50px;
             width: 50px;
             border-radius: 25px;
-            background-color: #2D9759;
+            background-image: url(../../img/author-img.png);
+            background-size: cover;
+            background-position: center;
+            background-color: rgba($color: $primary, $alpha: .4);
+            transform: rotateY(180deg);
+            border:1px solid $secondary;
         }
 
         .author-name {
@@ -522,4 +556,74 @@ footer {
             }
         }
     }
+
+    .article-content-body
+    {
+        color: #EBE8E2;
+        .row 
+        {
+            padding: 2rem 0;
+        }
+        .article-wrapper
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+       
+        .article-content{
+            max-width: 60ch;
+            padding-top: 2rem;
+            h1 
+            {
+                font-size: $heading;
+                font-weight: $regular;
+                text-align: left;
+            }
+            h2 
+            {
+                font-size: $sub-heading;
+                font-weight: $semi-bold;
+                line-height: 41px;
+                padding-top: 1rem;
+            }
+            p 
+            {
+               font-size: $paragraph;
+               line-height: 33px;
+               font-weight: $light;
+               color: #EBE8E2; 
+            }
+        }
+        .article-img-one
+        {
+            max-width: 70ch;
+            margin: 0 auto;
+        }
+
+         #article-custom
+        {
+            margin-top: 1rem;
+            background-color: #EBE8E2;
+            color: #1A1C1E;
+            padding-bottom:2rem;
+            p
+            {
+                color:#1A1C1E;
+            }
+            h2 
+            {
+                font-weight: $bold;
+            }
+            h3 
+            {
+                font-weight: $medium;
+            }
+        }
+        .article-text
+        {
+            padding-top: 1rem;
+        }
+    }
+
 }

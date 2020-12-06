@@ -55,13 +55,24 @@ nav .collapse a:hover {
 }
 
 main {
-  margin-top: 3rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+}
+main .row {
+  width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 800px) {
+  main .row {
+    width: 90%;
+  }
 }
 main .hero-content {
   color: #0B315E;
+  max-width: 634px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 main .hero-content h1 {
   font-size: 3.25rem;
@@ -101,7 +112,6 @@ main .hero-content li:hover svg path {
 
 .container {
   max-width: 1440px !important;
-  width: 100vw;
 }
 
 .main-container {
@@ -113,15 +123,28 @@ main .hero-content li:hover svg path {
   margin-bottom: 3rem;
   color: #0B315E;
 }
+.category-wrapper .row {
+  width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 800px) {
+  .category-wrapper .row {
+    width: 90%;
+  }
+}
 .category-wrapper .category-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 3rem;
+  padding-top: 3rem;
+  text-align: left;
+  max-width: 634px;
+  margin: 0 auto;
 }
 @media (min-width: 990px) {
   .category-wrapper .category-info {
-    margin-top: 0;
+    align-items: flex-start;
+    padding-top: 0;
   }
 }
 .category-wrapper .category-img {
@@ -132,9 +155,10 @@ main .hero-content li:hover svg path {
   font-size: 3.25rem;
   font-weight: 700;
   line-height: 71px;
+  max-width: 532px;
 }
 .category-wrapper p {
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 400;
   line-height: 40px;
 }
@@ -142,6 +166,7 @@ main .hero-content li:hover svg path {
   font-size: 1.25rem;
   font-weight: bold;
   color: #0B315E;
+  width: 100%;
 }
 .category-wrapper a:hover svg path {
   fill: gray;
@@ -360,14 +385,15 @@ footer .footer-item ul {
 }
 .article-body .article-header {
   position: absolute;
-  bottom: 2%;
-  left: 10%;
+  bottom: 5%;
+  left: 6.5%;
+  padding-bottom: 5rem;
   color: #F9F5EF;
-  max-width: 500px;
-  height: 300px;
+  max-width: fit-content;
+  height: 200px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 .article-body .article-header span:nth-child(1) {
   font-size: 1rem;
@@ -382,7 +408,7 @@ footer .footer-item ul {
 .article-body .author-info {
   margin-top: 1rem;
   display: flex;
-  width: 200px;
+  width: 210px;
   justify-content: space-between;
   align-items: center;
   font-weight: 500;
@@ -392,8 +418,67 @@ footer .footer-item ul {
   height: 50px;
   width: 50px;
   border-radius: 25px;
-  background-color: #2D9759;
+  background-image: url(../../img/author-img.png);
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(11, 49, 94, 0.4);
+  transform: rotateY(180deg);
+  border: 1px solid #F9F5EF;
 }
 .article-body .author-info .author-name span {
   font-weight: 400;
+}
+.article-body .article-content-body {
+  color: #EBE8E2;
+}
+.article-body .article-content-body .row {
+  padding: 2rem 0;
+}
+.article-body .article-content-body .article-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.article-body .article-content-body .article-content {
+  max-width: 60ch;
+  padding-top: 2rem;
+}
+.article-body .article-content-body .article-content h1 {
+  font-size: 3.25rem;
+  font-weight: 400;
+  text-align: left;
+}
+.article-body .article-content-body .article-content h2 {
+  font-size: 1.5625rem;
+  font-weight: 600;
+  line-height: 41px;
+  padding-top: 1rem;
+}
+.article-body .article-content-body .article-content p {
+  font-size: 1.25rem;
+  line-height: 33px;
+  font-weight: 300;
+  color: #EBE8E2;
+}
+.article-body .article-content-body .article-img-one {
+  max-width: 70ch;
+  margin: 0 auto;
+}
+.article-body .article-content-body #article-custom {
+  margin-top: 1rem;
+  background-color: #EBE8E2;
+  color: #1A1C1E;
+  padding-bottom: 2rem;
+}
+.article-body .article-content-body #article-custom p {
+  color: #1A1C1E;
+}
+.article-body .article-content-body #article-custom h2 {
+  font-weight: 700;
+}
+.article-body .article-content-body #article-custom h3 {
+  font-weight: 500;
+}
+.article-body .article-content-body .article-text {
+  padding-top: 1rem;
 }
