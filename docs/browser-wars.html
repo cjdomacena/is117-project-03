@@ -13,9 +13,9 @@
 
     <body class="article-template">
         <div class="container-fluid pb-5">
-            <div class="article-template-hero-bg  container-xl">
+            <div class="article-template-hero-bg  container-xl "  id="change-bg">
 
-                <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+                <nav class="navbar navbar-expand-lg navbar-light bg-transparent " >
                     <a class="navbar-brand" href="#">
                         <svg width="54" height="51" viewBox="0 0 54 51" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect x="0.4" y="0.4" width="53.2" height="50.2" rx="4.6" stroke="#0B315E"
@@ -32,7 +32,7 @@
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                        aria-expanded="false" aria-label="Toggle navigation" id="nav-button">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
@@ -420,7 +420,23 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
             crossorigin="anonymous"></script>
+            <script>
+                var btn = document.getElementById("nav-button");
+                var action = 1;
+                btn.addEventListener("click", () => {
+                    if (action == 1) {
+                        document.getElementById("change-bg").classList.add("custom-bg");
 
+                        action = 2;
+                    }
+                    else {
+    
+                        document.getElementById("change-bg").classList.remove("custom-bg");
+                        action = 1;
+                    }
+    
+                });
+            </script>
     </body>
 
 </html>

@@ -14,8 +14,21 @@ body a:hover {
 }
 
 .custom-bg .bg-transparent {
-  background-color: rgba(5, 5, 5, 0.4) !important;
+  background-color: rgba(5, 5, 5, 0.7) !important;
   transition: ease-in, 0.5s;
+}
+.custom-bg .bg-transparent a {
+  color: #F1F5FD !important;
+}
+.custom-bg .bg-transparent svg rect {
+  stroke: #fffffe;
+}
+.custom-bg .bg-transparent svg path {
+  fill: #D2D2D2;
+}
+
+.custom-color nav a {
+  color: #FFFFFE !important;
 }
 
 nav .navbar-brand:hover svg rect {
@@ -610,6 +623,9 @@ footer .footer-item ul {
   background-size: cover;
   background-position: center;
   max-width: 1280px;
+  position: relative;
+  padding: 0;
+  margin: 0 auto;
 }
 
 .container-fluid {
@@ -620,19 +636,20 @@ footer .footer-item ul {
 .article-template-hero-content {
   height: 500px;
   padding: 0 15px;
-  position: relative;
+  z-index: 1;
 }
 
 .article-template-header {
   font-family: "Raleway", sans-serif;
   position: absolute;
   max-width: 500px;
-  bottom: 0;
-  left: 10%;
+  bottom: 5%;
+  left: 15%;
+  z-index: 0;
 }
 @media (max-width: 600px) {
   .article-template-header {
-    left: 0;
+    left: 5%;
   }
 }
 .article-template-header ul li:nth-child(1) {

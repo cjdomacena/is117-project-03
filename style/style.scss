@@ -38,12 +38,40 @@ body {
 
 .custom-bg {
     .bg-transparent {
-        background-color: rgba(5, 5, 5, 0.4) !important;
+        background-color: rgba(5, 5, 5, 0.7) !important;
         transition: ease-in, .5s;
+        a 
+        {
+            color: #F1F5FD !important;
+        }
+        svg 
+        {
+            rect
+            {
+                stroke: #fffffe;
+            }
+            path 
+            {
+                fill: #D2D2D2;
+            }
+        }
+        
     }
-
 }
 
+
+.custom-color
+{
+    nav 
+    {
+        a 
+        {
+          color: #FFFFFE !important;
+        }
+    }
+
+  
+}
 
 nav {
 
@@ -494,6 +522,7 @@ footer {
     background-color: #1A1C1E;
     font-family: $font;
 
+
     .article-hero-bg {
         background-image: url(../../img/invention-hero.png);
         background-position: center;
@@ -778,6 +807,9 @@ footer {
     background-size: cover;
     background-position: center;
     max-width: 1280px;
+    position: relative;
+    padding: 0;
+    margin: 0 auto;
 }
 
 .container-fluid {
@@ -788,18 +820,21 @@ footer {
 .article-template-hero-content {
     height: 500px;
     padding: 0 15px;
-    position: relative;
+    
+    z-index: 1;
+ 
 }
 
 .article-template-header {
     font-family: $font;
     position: absolute;
     max-width: 500px;
-    bottom: 0;
-    left: 10%;
+    bottom: 5%;
+    left: 15%;
+    z-index: 0;
     @media (max-width:600px) 
     {
-     left: 0;   
+     left: 5%;   
     }
     ul li:nth-child(1) {
         font-size: 1rem;
