@@ -381,7 +381,7 @@ footer .footer-item ul {
 }
 .article-body .article-header {
   position: absolute;
-  bottom: 5%;
+  bottom: 0;
   left: 6.5%;
   padding-bottom: 5rem;
   color: #F9F5EF;
@@ -390,6 +390,11 @@ footer .footer-item ul {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+@media (max-width: 400px) {
+  .article-body .article-header {
+    bottom: 15%;
+  }
 }
 .article-body .article-header span:nth-child(1) {
   font-size: 1rem;

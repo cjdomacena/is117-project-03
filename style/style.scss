@@ -501,8 +501,12 @@ footer {
 
     .article-header {
         position: absolute;
-        bottom: 5%;
+        bottom: 0;
         left: 6.5%;
+        @media (max-width: 400px) 
+        {
+            bottom: 15%;   
+        }
         padding-bottom: 5rem;
         color: $secondary;
         max-width: fit-content;
