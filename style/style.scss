@@ -74,7 +74,7 @@ body {
 }
 
 nav {
-
+    font-family: $font;
     .navbar-brand:hover {
         svg {
 
@@ -203,6 +203,7 @@ main {
 
 .main-container {
     padding: 0;
+    max-width: 1280px;
 }
 
 .category-wrapper {

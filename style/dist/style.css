@@ -31,6 +31,9 @@ body a:hover {
   color: #FFFFFE !important;
 }
 
+nav {
+  font-family: "Raleway", sans-serif;
+}
 nav .navbar-brand:hover svg rect {
   stroke: #FF9D00;
 }
@@ -126,6 +129,7 @@ main .hero-content li:hover svg path {
 
 .main-container {
   padding: 0;
+  max-width: 1280px;
 }
 
 .category-wrapper {
