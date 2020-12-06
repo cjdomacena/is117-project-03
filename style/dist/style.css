@@ -376,10 +376,13 @@ footer .footer-item ul {
 }
 .article-body .article-hero-bg {
   background-image: url(../../img/invention-hero.png);
+  background-position: center;
+  background-size: cover;
   height: 450px;
   position: relative;
   max-width: 1280px;
   margin: 0 auto;
+  background-repeat: no-repeat;
 }
 .article-body .article-header {
   position: absolute;
