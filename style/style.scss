@@ -797,7 +797,10 @@ footer {
     max-width: 500px;
     bottom: 0;
     left: 10%;
-
+    @media (max-width:600px) 
+    {
+     left: 0;   
+    }
     ul li:nth-child(1) {
         font-size: 1rem;
         color: $history;
@@ -823,7 +826,7 @@ footer {
         display: flex;
         margin-top: 1rem;
         align-items: center;
-
+        color: #D2D2D2;
         .template-author-img {
             width: 50px;
             height: 50px;
@@ -878,7 +881,7 @@ footer {
         .template-article-title div:nth-child(2) {
             padding-left: 0;
 
-            @media (min-width:370px) {
+            @media (min-width:430px) {
                 padding-left: 1rem;
             }
 
@@ -892,7 +895,7 @@ footer {
                 margin: 0;
                 line-height: 62px;
                 color: #0B151E;
-
+                width: 250px;
             }
         }
 

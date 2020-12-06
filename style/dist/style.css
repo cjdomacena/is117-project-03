@@ -630,6 +630,11 @@ footer .footer-item ul {
   bottom: 0;
   left: 10%;
 }
+@media (max-width: 600px) {
+  .article-template-header {
+    left: 0;
+  }
+}
 .article-template-header ul li:nth-child(1) {
   font-size: 1rem;
   color: #32FA85;
@@ -652,6 +657,7 @@ footer .footer-item ul {
   display: flex;
   margin-top: 1rem;
   align-items: center;
+  color: #D2D2D2;
 }
 .article-template-header .template-author-info .template-author-img {
   width: 50px;
@@ -701,7 +707,7 @@ footer .footer-item ul {
   padding-left: 0;
   max-width: 250px;
 }
-@media (min-width: 370px) {
+@media (min-width: 430px) {
   .template-article-body .template-article-body-content .template-article-title div:nth-child(2) {
     padding-left: 1rem;
   }
@@ -714,6 +720,7 @@ footer .footer-item ul {
   margin: 0;
   line-height: 62px;
   color: #0B151E;
+  width: 250px;
 }
 .template-article-body .template-article-body-content .template-img {
   height: 180px;
