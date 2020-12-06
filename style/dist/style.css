@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;900&display=swap");
 html {
   font-size: 16px;
+  font-family: "Raleway", sans-serif;
 }
 
 body {
@@ -11,15 +12,21 @@ body a:hover {
   color: gray;
 }
 
+.custom-bg .bg-transparent {
+  background-color: rgba(5, 5, 5, 0.4) !important;
+  transition: ease-in, 0.5s;
+}
+
 nav .navbar-brand:hover svg rect {
-  stroke: gray;
+  stroke: #FF9D00;
 }
 nav .navbar-brand:hover svg path {
-  fill: gray;
+  fill: #FF9D00;
 }
 nav .collapse {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 500;
+  z-index: 1;
 }
 nav .collapse .navbar-nav {
   width: 100%;
@@ -35,13 +42,16 @@ nav .collapse .navbar-nav {
   }
 }
 nav .collapse .navbar-nav .active-custom {
-  color: gray !important;
+  color: #FF9D00 !important;
+}
+nav .collapse .contrast {
+  color: #F9F5EF !important;
 }
 nav .collapse a {
   color: #0B315E !important;
 }
 nav .collapse a:hover {
-  color: gray !important;
+  color: #FF9D00 !important;
 }
 
 main {
@@ -87,6 +97,15 @@ main .hero-content li:hover {
 }
 main .hero-content li:hover svg path {
   fill: gray;
+}
+
+.container {
+  max-width: 1440px !important;
+  width: 100vw;
+}
+
+.main-container {
+  padding: 0;
 }
 
 .category-wrapper {
@@ -329,4 +348,52 @@ footer .footer-item ul {
   margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
+}
+
+.article-body {
+  background-color: #1A1C1E;
+}
+.article-body .article-hero-bg {
+  background-image: url(../../img/invention-hero.png);
+  height: 450px;
+  position: relative;
+}
+.article-body .article-header {
+  position: absolute;
+  bottom: 2%;
+  left: 10%;
+  color: #F9F5EF;
+  max-width: 500px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.article-body .article-header span:nth-child(1) {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2D9759;
+}
+.article-body .article-header h1 {
+  font-size: 3.25rem;
+  font-weight: 700;
+  padding-top: 0;
+}
+.article-body .author-info {
+  margin-top: 1rem;
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  height: 50px;
+}
+.article-body .author-info .author-img {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  background-color: #2D9759;
+}
+.article-body .author-info .author-name span {
+  font-weight: 400;
 }
