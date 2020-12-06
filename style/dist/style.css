@@ -483,3 +483,109 @@ footer .footer-item ul {
 .article-body .article-content-body .article-text {
   padding-top: 1rem;
 }
+
+.learn-more {
+  background-color: #EBE8E2;
+  padding: 2rem;
+}
+@media (max-width: 376px) {
+  .learn-more {
+    display: none;
+  }
+}
+.learn-more .learn-more-header {
+  width: 300px;
+  padding-bottom: 1rem;
+}
+.learn-more .learn-more-header h3 {
+  line-height: 33px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #0B315E;
+}
+.learn-more .learn-more-card {
+  height: 160px;
+  width: 300px;
+  background: linear-gradient(135deg, rgba(249, 245, 239, 0.4) 0%, rgba(255, 255, 255, 0.4) 100%), #F9F5EF;
+  background-blend-mode: soft-light, normal;
+  border: 1.50701px solid rgba(255, 255, 255, 0.4);
+  box-sizing: border-box;
+  box-shadow: 0px 13px 31px rgba(12, 20, 33, 0.04), 0px 9.45547px 20.8947px rgba(12, 20, 33, 0.032375), 0px 6.58125px 13.5141px rgba(12, 20, 33, 0.027), 0px 4.31641px 8.38574px rgba(12, 20, 33, 0.023125), 0px 2.6px 5.0375px rgba(12, 20, 33, 0.02), 0px 1.37109px 2.99707px rgba(12, 20, 33, 0.016875), 0px 0.56875px 1.79219px rgba(12, 20, 33, 0.013), inset 0px 2px 1px #FFFFFF;
+  border-radius: 15px;
+}
+.learn-more .learn-more-card .article-badge-wrapper {
+  display: flex;
+  align-items: center;
+  width: auto;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+}
+.learn-more .learn-more-card .article-badge-wrapper p:nth-child(2) {
+  padding-left: 0.5rem;
+  color: #0B315E;
+  font-weight: 300;
+}
+.learn-more .learn-more-card .article-badge-wrapper p {
+  padding: 0;
+  margin: 0;
+}
+.learn-more .learn-more-card .article-badge-wrapper .article-box-badge {
+  width: 66px;
+  height: 20px;
+  border-radius: 25px;
+  text-align: center;
+  border: solid 1px #0B315E;
+  color: #0B315E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.learn-more .learn-more-card .learn-more-card-header-wrapper {
+  padding-top: 0.5rem;
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+}
+.learn-more .learn-more-card .learn-more-card-header-wrapper .learn-more-card-title {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+.learn-more .learn-more-card .learn-more-card-header-wrapper .learn-more-card-img {
+  width: 30%;
+  height: 60px;
+  border-radius: 8px;
+  background-color: #0B315E;
+}
+.learn-more .learn-more-card .learn-more-card-header-wrapper a {
+  font-size: 1.25rem;
+  line-height: 27px;
+  color: #0B315E;
+  font-weight: 700;
+}
+.learn-more .learn-more-card .learn-more-card-header-wrapper a:hover {
+  text-decoration: underline;
+}
+.learn-more .learn-more-card .learn-more-card-button {
+  padding-left: 0.8rem;
+  padding-top: 2rem;
+  height: 25px;
+  display: flex;
+  align-items: center;
+}
+.learn-more .learn-more-card .learn-more-card-button button {
+  border: none;
+  background-color: transparent;
+  border: 1px solid #0B315E;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.learn-more .learn-more-card .learn-more-card-button button svg {
+  padding-left: 0.2rem;
+}
+.learn-more .learn-more-card .learn-more-card-button button:hover {
+  background-color: rgba(128, 128, 128, 0.2);
+}
