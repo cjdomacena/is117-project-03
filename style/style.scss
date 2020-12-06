@@ -121,7 +121,7 @@ main {
     
     .hero-content {
         color: $primary;
-        max-width: 634px;
+        max-width: 550px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -203,7 +203,7 @@ main {
         justify-content: center;
         padding-top: 3rem;
         text-align: left;
-        max-width: 634px;
+        max-width: 550px;
         margin: 0 auto;
         @media (min-width: 990px) {
             align-items: flex-start;
@@ -228,7 +228,6 @@ main {
         font-size: $paragraph;
         font-weight: $regular;
         line-height: 40px;
-        
     }
 
     a {
