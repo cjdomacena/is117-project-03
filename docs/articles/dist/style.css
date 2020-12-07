@@ -140,7 +140,7 @@ body {
   font-size: 2.5625rem;
   margin: 0;
   padding: 0.5rem 0;
-  color: #363636;
+  color: #484848;
   font-family: "Roboto Slab", serif;
 }
 .article-container .article-body .article-header .article-author-info {
@@ -189,7 +189,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   line-height: 33px;
-  color: #676767;
+  color: #484848;
 }
 .article-container .article-body .article-hero-img {
   max-width: 800px;
@@ -206,6 +206,7 @@ body {
   width: 100%;
   height: 100%;
   margin: 0 auto;
+  border-radius: 15px;
 }
 .article-container .article-body .article-quote {
   width: 600px;
@@ -232,6 +233,7 @@ body {
   padding: 0 0.5rem;
   font-family: "Raleway", sans-serif;
   font-style: italic;
+  color: #484848;
 }
 .article-container .article-body .article-quote svg {
   width: 30px;
@@ -257,7 +259,7 @@ body {
 }
 .article-container .article-body .article-content h1, .article-container .article-body .article-content h2 {
   font-family: "Roboto Slab", serif;
-  color: #676767;
+  color: #484848;
   padding-bottom: 1rem;
 }
 .article-container .article-body .article-content h1 {
@@ -269,7 +271,7 @@ body {
 .article-container .article-body .article-content p {
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
-  color: #676767;
+  color: #484848;
   line-height: 33px;
 }
 .article-container .article-body .article-content p:first-of-type:first-letter {
@@ -289,7 +291,7 @@ body {
 }
 .article-container .article-body .related-article-container {
   max-width: 300px;
-  background-color: #e2ffee;
+  background: #F1F5FD;
   font-family: "Roboto Slab", serif;
   margin: 0 auto;
 }
@@ -351,13 +353,14 @@ body {
   font-size: 1rem;
   margin-bottom: 0;
   font-family: "Roboto Slab", serif;
-  color: #636363;
-  font-weight: 500;
+  color: #484848;
+  font-weight: 700;
+  line-height: 27px;
 }
 .article-container .article-body .related-article-container .related-article-cards .related-article-card .related-article-info p {
   font-size: 0.8rem;
   font-family: "Roboto Slab", serif;
-  color: #A9A9A9;
+  color: #484848;
   font-weight: normal;
   place-self: start;
   padding-top: 1rem;
@@ -365,7 +368,7 @@ body {
 .article-container .article-body .read-next {
   max-width: 300px;
   margin: 0 auto;
-  background-color: #e2ffee;
+  background: #F1F5FD;
   padding: 2rem 1rem;
 }
 .article-container .article-body .read-next .read-next-contents {
@@ -376,14 +379,14 @@ body {
   font-size: 1rem;
   font-weight: bolder;
   font-family: "Roboto Slab", serif;
-  color: #393939;
+  color: #484848;
   padding-bottom: 0.5rem;
 }
 .article-container .article-body .read-next .read-next-contents a {
   font-size: 1.25rem;
   font-weight: 500;
   font-family: "Roboto Slab", serif;
-  color: #393939;
+  color: #484848;
   line-height: 33px;
 }
 .article-container .article-body .read-next .read-next-contents p {
@@ -399,10 +402,6 @@ body {
     padding: 2rem 0;
     margin-bottom: 2rem;
   }
-}
-
-.test {
-  height: auto;
 }
 
 footer {
@@ -460,7 +459,7 @@ footer .footer-item ul {
 .learn-more .learn-more-card {
   height: 160px;
   width: 300px;
-  background: linear-gradient(135deg, rgba(249, 245, 239, 0.4) 0%, rgba(255, 255, 255, 0.4) 100%), #F9F5EF;
+  background: linear-gradient(135deg, rgba(241, 245, 253, 0.4) 0%, rgba(255, 255, 255, 0.4) 100%), #F1F5FD;
   background-blend-mode: soft-light, normal;
   border: 1.50701px solid rgba(255, 255, 255, 0.4);
   box-sizing: border-box;

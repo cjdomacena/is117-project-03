@@ -205,7 +205,7 @@ body {
                     font-size: 2.5625rem;
                     margin: 0;
                     padding: .5rem 0;
-                    color: #363636;
+                    color: #484848;
                     font-family: $roboto;
                 }
             }
@@ -268,7 +268,7 @@ body {
                     font-family: $raleway;
                     font-weight: 500;
                     line-height: 33px;
-                    color: #676767;
+                    color: #484848;
                 }
             }
         }
@@ -288,6 +288,7 @@ body {
                 width: 100%;
                 height: 100%;
                 margin: 0 auto;
+                border-radius: 15px;
             }
         }
 
@@ -321,6 +322,7 @@ body {
                 padding: 0 .5rem;
                 font-family: $raleway;
                 font-style: italic;
+                color: #484848;
             }
             svg
             {
@@ -349,7 +351,7 @@ body {
             h1,h2 
             {
                 font-family: $roboto;
-                color: #676767;
+                color: #484848;
                 padding-bottom: 1rem;
             }
             h1
@@ -364,7 +366,7 @@ body {
             {
                 font-family: $raleway;
                 font-size: 1rem;
-                color: #676767;
+                color: #484848;
                 line-height: 33px;
 
             }
@@ -394,7 +396,7 @@ body {
         .related-article-container
         {
             max-width: 300px;
-            background-color: rgba(226, 255, 238, 1);
+            background: #F1F5FD;
             font-family: $roboto;
             margin: 0 auto;
             @media screen and (max-width: 992px) 
@@ -457,14 +459,15 @@ body {
                             font-size: 1rem;
                             margin-bottom: 0;
                             font-family: $roboto;
-                            color: #636363;
-                            font-weight: 500;
+                            color: #484848;
+                            font-weight: 700;
+                            line-height: 27px;
                         }
                         p 
                         {
                             font-size: .8rem;
                             font-family: $roboto;
-                            color: #A9A9A9;
+                            color: #484848;
                             font-weight: normal;
                             place-self: start;
                             padding-top: 1rem;
@@ -477,7 +480,7 @@ body {
         {
             max-width: 300px;
             margin: 0 auto;
-            background-color: rgba(226, 255, 238, 1);
+            background: #F1F5FD;
             padding: 2rem 1rem;
             .read-next-contents
             {
@@ -488,7 +491,7 @@ body {
                     font-size: 1rem;
                     font-weight: bolder;
                     font-family: $roboto;
-                    color: #393939;
+                    color: #484848;
                     padding-bottom: .5rem;
                 }
                 a
@@ -496,7 +499,7 @@ body {
                     font-size: 1.25rem;
                     font-weight: 500;
                     font-family: $roboto;
-                    color: #393939;
+                    color: #484848;
                     line-height: 33px;
                 }
                 p 
@@ -506,6 +509,7 @@ body {
                     line-height: 27px;
                     margin-bottom: 0;
                     padding-top: .3rem;
+                 
                 }
             }
             @media screen and (max-width: 1000px) 
@@ -519,10 +523,6 @@ body {
     }
 
   
-}
-.test 
-{
-    height: auto;
 }
 
 footer {
@@ -590,7 +590,7 @@ footer {
     .learn-more-card {
         height: 160px;
         width: 300px;
-        background: linear-gradient(135deg, rgba(249, 245, 239, 0.4) 0%, rgba(255, 255, 255, 0.4) 100%), #F9F5EF;
+        background: linear-gradient(135deg, rgba(241, 245, 253, 0.4) 0%, rgba(255, 255, 255, 0.4) 100%), #F1F5FD;
         background-blend-mode: soft-light, normal;
         border: 1.50701px solid rgba(255, 255, 255, 0.4);
         box-sizing: border-box;
