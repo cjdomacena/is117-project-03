@@ -28,15 +28,19 @@ html {
 }
 
 body {
-    background-image: url("https://products.ls.graphics/mesh-gradients/images/08.-Violet-Blue.jpg");
+  
+    background-image: url("../../img/temp.png");
     background-size: cover;
-    
+    background-position: center;
     a:hover {
         text-decoration: none;
         color: $tertiary;
     }
 }
-
+.container-xl 
+{
+    padding: 0;
+}
 .custom-bg {
     padding: 0 !important;
     margin: 0 !important;
@@ -206,10 +210,10 @@ main {
 }
 
 
-
 .main-container {
     padding: 0;
     max-width: 1280px;
+
 }
 
 .category-wrapper {

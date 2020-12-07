@@ -178,7 +178,7 @@ body {
         height: auto;
         // background-color:rgba($color: #ffffff, $alpha: 1);
         background: radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.4) 0%, rgba(187, 187, 187, 0.342) 100%);
-        backdrop-filter: blur(22px);
+        backdrop-filter: blur(42px);
         /* Note: backdrop-filter has minimal browser support */
 
         border-radius: 15px;
@@ -264,7 +264,7 @@ body {
         .sub-heading-container {
             max-width: 550px;
             margin: 0 auto;
-            background-color: #f1f5fd28;
+            background-color: #f1f5fd9f;
 
             .sub-heading-text {
                 max-width: 510px;
