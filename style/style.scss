@@ -28,8 +28,9 @@ html {
 }
 
 body {
-    background-color: $secondary;
-
+    background-image: url("https://products.ls.graphics/mesh-gradients/images/08.-Violet-Blue.jpg");
+    background-size: cover;
+    
     a:hover {
         text-decoration: none;
         color: $tertiary;
@@ -37,6 +38,8 @@ body {
 }
 
 .custom-bg {
+    padding: 0 !important;
+    margin: 0 !important;
     .bg-transparent {
         background-color: rgba(5, 5, 5, 0.7) !important;
         transition: ease-in-out all .5s;
@@ -73,10 +76,10 @@ body {
 
 nav {
     font-family: $font;
-    padding: 1rem 2rem !important;
+    padding: 1rem 2rem ;
     @media screen and (max-width:600px) 
     {
-     padding: 1rem 1rem !important;   
+     padding: 1rem 1rem;   
     }
     .navbar-brand:hover {
         svg {
@@ -283,7 +286,7 @@ main {
     height: 620px;
     display: grid;
     place-items: center;
-    background: rgba(225, 225, 225, 0.3);
+    background: rgba(225, 225, 225, 0.2);
 
     h1 {
         margin: 0 auto;
@@ -303,6 +306,7 @@ main {
         h1 {
 
             margin-left: 20px;
+            color: rgba(67, 67, 67, 1);
 
         }
 
@@ -338,12 +342,11 @@ main {
     .article-container {
         height: 500px;
         width: 332px;
-        background: linear-gradient(135deg, rgba(249, 245, 239, 0.4) 0%, rgba(255, 255, 255, 0.4) 100%), #F9F5EF;
-        background-blend-mode: soft-light, normal;
-        border: 1.50701px solid rgba(255, 255, 255, 0.4);
-        box-sizing: border-box;
-        box-shadow: 0px 13px 31px rgba(12, 20, 33, 0.04), 0px 9.45547px 20.8947px rgba(12, 20, 33, 0.032375), 0px 6.58125px 13.5141px rgba(12, 20, 33, 0.027), 0px 4.31641px 8.38574px rgba(12, 20, 33, 0.023125), 0px 2.6px 5.0375px rgba(12, 20, 33, 0.02), 0px 1.37109px 2.99707px rgba(12, 20, 33, 0.016875), 0px 0.56875px 1.79219px rgba(12, 20, 33, 0.013), inset 0px 2px 1px #FFFFFF;
-        border-radius: 15px;
+        background: radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, .2) 100%);
+        backdrop-filter: blur(22px);
+        /* Note: backdrop-filter has minimal browser support */
+        
+        border-radius: 10px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -390,8 +393,8 @@ main {
     }
 
     .badge {
-        background: #F9F5EF;
-        border: 0.5px solid #0B315E;
+        // background: #F9F5EF;
+        border: 0.5px solid rgba(67, 67, 67, 1);
         box-sizing: border-box;
         border-radius: 8px;
         width: 49px;
@@ -451,11 +454,20 @@ main {
         a {
             color: #0B315E;
             font-weight: 700;
+            padding: 0;
+            margin: 0;
         }
 
         a:hover {
             background-color: #0B315E;
             color: #F9F5EF;
+            svg 
+            {
+                path 
+                {
+                    stroke: white;
+                }
+            }
         }
     }
 
