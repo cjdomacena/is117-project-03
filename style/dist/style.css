@@ -15,7 +15,7 @@ body a:hover {
 
 .custom-bg .bg-transparent {
   background-color: rgba(5, 5, 5, 0.7) !important;
-  transition: ease-in, 0.5s;
+  transition: ease-in-out all 0.5s;
 }
 .custom-bg .bg-transparent a {
   color: #F1F5FD !important;
