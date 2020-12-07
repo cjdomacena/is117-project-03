@@ -75,16 +75,17 @@ body {
 
 nav {
     font-family: $font;
+    padding: 1rem 8px !important;
     .navbar-brand:hover {
         svg {
 
             // fill: #32FA85;
             rect {
-                stroke: #FF9D00;
+                stroke: #363636;
             }
 
             path {
-                fill: #FF9D00;
+                fill:#363636;
             }
         }
     }
@@ -119,7 +120,7 @@ nav {
         }
 
         a {
-            color: $primary !important;
+            color: #363636 !important;
         }
 
         a:hover {
