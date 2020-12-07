@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background-color: rgba(224, 224, 224, 0.1);
+  background-color: #E0E0E0;
 }
 
 .custom-bg .bg-transparent {
@@ -36,7 +36,12 @@ body {
   position: relative;
 }
 .nav-container nav {
-  padding: 1rem 0.5rem;
+  padding: 1rem 2rem;
+}
+@media screen and (max-width: 600px) {
+  .nav-container nav {
+    padding: 1rem 1rem;
+  }
 }
 .nav-container .navbar {
   z-index: 2;
@@ -339,7 +344,7 @@ body {
   width: 90px;
   height: 80px;
   border-radius: 5px;
-  background-color: #ffffff;
+  background-color: #fffffe;
   background-size: cover;
   background-position: center;
 }
@@ -407,7 +412,7 @@ body {
 footer {
   min-height: 77px;
   width: 100%;
-  background-color: #e0e0e0;
+  background-color: #F1F5FD;
   display: grid;
   place-items: center;
   z-index: 5;
